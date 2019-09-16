@@ -60,13 +60,15 @@
 //
 // Steppers
 //
+// Note: Deltasine R3dback has E2 & Y step pins swapped!
+
 #define X_STEP_PIN         17
 #define X_DIR_PIN          16
 #define X_ENABLE_PIN       48
 
-#define Y_STEP_PIN         54
-#define Y_DIR_PIN          47
-#define Y_ENABLE_PIN       55
+#define E2_STEP_PIN        54
+#define E2_DIR_PIN         47
+#define E2_ENABLE_PIN      55
 
 #define Z_STEP_PIN         57
 #define Z_DIR_PIN          56
@@ -80,9 +82,9 @@
 #define E1_DIR_PIN         25
 #define E1_ENABLE_PIN      27
 
-#define E2_STEP_PIN        29
-#define E2_DIR_PIN         28
-#define E2_ENABLE_PIN      39
+#define Y_STEP_PIN         29
+#define Y_DIR_PIN          28
+#define Y_ENABLE_PIN       39
 
 //
 // Temperature Sensors
@@ -127,7 +129,7 @@
 #ifndef FAN_PIN
   #define FAN_PIN           7
 #endif
-#define FAN1_PIN            8
+//#define FAN1_PIN            8
 
 //
 // Misc. Functions
@@ -136,7 +138,8 @@
 #define LED_PIN            13
 #define PS_ON_PIN          45
 #define KILL_PIN           46
-#define CASE_LIGHT_PIN     45
+// r3dback2: was fan1
+#define CASE_LIGHT_PIN     8 //was 45
 
 //
 // M3/M4/M5 - Spindle/Laser Control
