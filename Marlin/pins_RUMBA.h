@@ -127,7 +127,7 @@
 #ifndef FAN_PIN
   #define FAN_PIN           7
 #endif
-#define FAN1_PIN            8
+//#define FAN1_PIN            8
 
 //
 // Misc. Functions
@@ -136,7 +136,7 @@
 #define LED_PIN            13
 #define PS_ON_PIN          45
 #define KILL_PIN           46
-#define CASE_LIGHT_PIN     45
+#define CASE_LIGHT_PIN     8 //was 45
 
 //
 // M3/M4/M5 - Spindle/Laser Control
